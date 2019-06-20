@@ -1629,6 +1629,11 @@ public class Game
 		return this.setTag("Black", name).setTag("BlackElo", elo);
 	}
 
+	public Game setTurn(Color player) {
+		this.toMove = player;
+		return this;
+	}
+
 	public boolean isCheck()
 	{
 		final ArrayList<Square> squaresControlledByOpponent = this.getSquaresControlledBy(this.toMove.opposite());
