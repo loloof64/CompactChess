@@ -10,13 +10,13 @@ public class Square
 	public Color pieceColor = null;
 	public PieceType pieceType = null;
 
-	Square(final byte file, final byte rank)
+	public Square(final byte file, final byte rank)
 	{
 		this.file = file;
 		this.rank = rank;
 	}
 
-	Square(final byte file, final byte rank, Color pieceColor, final PieceType pieceType)
+	public Square(final byte file, final byte rank, Color pieceColor, final PieceType pieceType)
 	{
 		this.file = file;
 		this.rank = rank;
