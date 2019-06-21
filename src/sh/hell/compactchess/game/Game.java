@@ -1630,7 +1630,28 @@ public class Game
 	}
 
 	public Game setTurn(Color player) {
-		this.toMove = player;
+		toMove = player;
+		return this;
+	}
+
+
+	public Game setWhiteKingSideCastle(boolean active){
+		whiteCanCastle = active;
+		return this;
+	}
+
+	public Game setWhiteQueenSideCastle(boolean active){
+		whiteCanCastleQueenside = active;
+		return this;
+	}
+
+	public Game setBlackKingSideCastle(boolean active){
+		blackCanCastle = active;
+		return this;
+	}
+
+	public Game setBlackQueenSideCastle(boolean active){
+		blackCanCastleQueenside = active;
 		return this;
 	}
 
